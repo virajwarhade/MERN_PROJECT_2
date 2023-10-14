@@ -5,8 +5,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 mongoose.connect(process.env.MONGO)
-.then((data) => console.log("sucess conection " +data))
-.catch((err) => console.log("error conecting "+ err))
+.then((data) => {console.log("sucess conection " +data)})
+.catch((err) => {console.log("error conecting "+ err)})
 
 const app = express()
 
