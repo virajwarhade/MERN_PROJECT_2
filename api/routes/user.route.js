@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/',test);
 
-router.get('/test2',test2)
+router.get('/test2',test2);
 
 
 export default router;
