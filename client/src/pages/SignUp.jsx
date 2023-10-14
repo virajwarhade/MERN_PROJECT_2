@@ -1,12 +1,12 @@
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; 
+import { Link, useNavigate } from 'react-router-dom'; 
 
 
 
 export default function SignUp() {
 
-
+  const navigate = useNavigate();
   const [formData,setFormData] = useState({});
   const [error,setError] = useState(false);
   const [loading,setLoading] = useState(false);
@@ -44,6 +44,7 @@ try {
     }
     
     setLoading(false);
+    navigate('/');
 } catch (error) {
   setLoading(false);
   setError(true);
