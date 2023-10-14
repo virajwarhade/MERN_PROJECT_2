@@ -19,7 +19,7 @@ export const signup = async(req,res,next) => {
 
 
     catch (error) {
-        next(errorHandler(300,"error"));
+        next(error);
     }
 
 
